@@ -6,18 +6,16 @@ var valorDoCampo = jQuery("#idadeUsuario").val();
 
 function verificarIdade(){
 
-	consoles.log("Início função");
+	console.log("Início função");
 
-	var idade = jQuery("#idadeUsuario").val()
+	var idade = jQuery("#idadeUsuario").val();
 
-	if(idade=18){
+	if(idade>=18){
 		jQuery("#retornoConsulta").html(`Você é maior de idade!`);
-	}ilse[
-		jQuery("#retornoConsulta").html(`Você é MENOR de idade!");
-	]
+	}if(idade<18){
+		jQuery("#retornoConsulta").html(`Você é MENOR de idade!`);
+	}
 
-	consoles.log("Fim função");
+	console.log("Fim função");
 
-}
-
-consoles.log("Fim programa");
+}  
