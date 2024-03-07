@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Input</title>
+
+    <style>
+        html{
+            
+        }
+        body{
+            padding: 50px;
+            font-family: Arial;
+            max-width: 340px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        h1{
+            
+        }
+        button{
+            background: #000;
+            color: #f2f2f2;
+            padding: 12px;
+            border:none;
+            cursor: pointer;
+        }
+
+        label{
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        input.caixa-de-texto{
+            position: relative;
+            display: block;
+            width: 300px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: #f2f2f2;
+        }
+
+        #retornoConsulta{
+            position: relative;
+            display: block;
+            background: #f2f2f2;
+            padding: 14px;
+            width: 300px;
+            margin-top:30px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Você é maior de idade?</h1>
+
+    <div>
+        <label>Seu nome:</label>
+        <input type="text" id="nomeUsuario" class="caixa-de-texto" placeholder="Seu nome completo">
+    </div>
+
+    <div>
+        <label>Sua idade:</label>
+        <input type="number" id="idadeUsuario" class="caixa-de-texto" min="1" step="1" placeholder="Sua idade">
+    </div>
+    
+    <button id="buscarDados" onclick="verificarIdade()">Consultar</button>
+
+    <div id="retornoConsulta">
+        <p>
+            Digite a sua idade no campo acima
+        </p>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>
